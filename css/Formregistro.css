@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+body {
+
+background-color: darkgray;
+
+
+}*/
+
+.form-register {
+
+    width: 35%;
+    background-color: rgb(177, 91, 91);
+    padding: 1%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 4px;
+    font-family: 'Arial Narrow';
+    color: black;
+    box-shadow: 7px 13px 37px rgb(253, 253, 253);
+    
+
+}
+form-register h4 {
+    front-family: Facon;
+    color:silver;
+}
+
+.Controls {
+
+    width: 100%;
+    background: cornsilk;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 1px solid orangered;
+    font-family: 'Arial Narrow';
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register {
+    width: 35%;
+    background-color: rgb(177, 91, 91);
+    padding: 1%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 4px;
+    font-family: 'Arial Narrow';
+    color: black;
+    box-shadow: 7px 13px 37px rgb(253, 253, 253);
+}
+
+form-register h4 {
+    font-family: Facon;
+    color:silver;
+}
+
+.Controls {
+
+    width: 100%;
+    background: cornsilk;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 1px solid orangered;
+    font-family: 'Arial Narrow';
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}

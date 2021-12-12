@@ -1,0 +1,217 @@
+body {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    background-image: url(../img/fondogym3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /*elemento permanece visible*/
+    align-content: center;
+}
+
+.CentroHome {
+    color: white;
+    background-color: black;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 90%;
+    border-radius: 1% 1%;
+}
+
+.EstiloContacto {
+    color: white;
+    background-color: black;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    opacity: 90%;
+    border-radius: 1% 1%;
+}
+
+.EstiloFormIngreso {
+    color: white;
+    background-color: black;
+    text-align: center;
+    /*align-content: center;
+    align-items: center;
+    text-align: left;
+    size: 50;*/
+    opacity: 90%;
+    border-radius: 1% 1%;
+}
+
+.EstiloFormIngreso .row {
+    margin: 5% 0;
+}
+
+.EstiloFormIngreso button {
+    margin-bottom: 5%;
+}
+
+.EstiloFormIngreso label {
+    font-size: 1.5em;
+}
+
+.EstiloFuente {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.EstiloFuenteSobreNosotros {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.video-responsive {
+    list-style: none;
+    padding: 0;
+    background: #000000;
+    width: 100%;
+    margin: auto;
+    align-content: initial;
+}
+
+table {
+    text-align: center;
+    background-color: white;
+    border: groove;
+}
+
+#textNombre {
+    text-align: center;
+}
+
+.CssImage {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50%;
+}
+
+.menu {
+    list-style: none;/*Propiedades elemento lista */
+    padding: 0;
+    background: #000000;/*establece el espacio de relleno */
+    width: 80%; /*ancho */
+    margin: auto; /*Margen */
+    align-content: initial; /*ajusta las líneas dentro de un contenedor flex cuando hay espacio extra en el eje transversal. Valores globales */
+    /*font-family: Facon;
+    font-size: 1.4em;*/
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    /*separa ligeramente del borde*/
+    display: block;
+}
+
+.menu li a:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+.menu li {
+    display: inline-block;
+    /*situar uno al lado de otro */
+    text-align: center;
+}
+
+.menu1 {
+    width: 150px;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 1;
+}
+
+.aCss {
+    color: black;
+}
+
+.quitarMargenInferior {
+    margin-bottom: 0;
+}
+
+#estiloBody {
+    background: linear-gradient(to right, rgb(16 38 54 / 46%), rgb(209 170 124 / 40%)), url(../img/gim2.jpg); /*fondos degradados en una dirección específica */
+    background-size: cover; /*La imagen es renderizada, preservando su proporción propia,*/
+    background-position: top; /* Posicion de la imagen: 0% en la posición vertical*/
+    background-attachment: fixed; /* determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor: a imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor*/
+}
+
+@font-face {
+    font-family: Facon;
+    src: url(../font/Facon.otf);
+}
+
+h1{
+    font-family: Facon, "sans-serif";
+}
+
+section#cuerpoPagina {
+    min-height: calc(90vh - 60px);
+}
+
+div.encabezado {
+    text-align: center;
+    background-color: black;
+}
+
+div.encabezado h1 {
+    color: aliceblue;
+}
+
+div.encabezado h2 {
+    color: white;
+}
+
+#form-validation {
+    text-align: center;
+    background-color: floralwhite;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#form-validation h4 {
+    font-family: Facon;
+}
+
+#form-validation .row {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+div#terminos_condiciones {
+    /*border: 1px black solid;*/
+    margin: 0;
+    padding: 1%;
+    text-align: left;
+}
+
+div#terminos_condiciones label {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.color_texto_menu{
+    color: white
+}
+
+.estilo_navbar{
+    padding: 0mm;
+    margin: 0mm;
+}
+
+#AlinearLogoInicio{
+text-align: center;
+}
+
+#Idbreadcrumbs1 li {
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+    color:white
+}

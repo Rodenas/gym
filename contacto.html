@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- caracter en lenguaje humano -->
+  <meta charset="UTF-8">
+  <!-- Vista distintas ventanas -->
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+  <!-- Informacion de la pagina -->
+  <meta name="Sistema web para gimnasio" content="Pagina de contacto"/>
+  <!-- Etiquetas para los buscadores -->
+  <meta name="keywords" content="Sistema web, gimnasio, contacto"/>
+
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="../dir/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="../dir/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+  <!-- Script JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/Archivo.js"></script>
+  <script type="text/javascript" src="js/funcionesGrupo6.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estiloHome.css">
+
+  <!-- Logo Icono -->
+  <link href="img/LogoSF.png" rel="icon" type="image/png">
+
+  <title>Contacto - a5-g6-gimnasio</title>
+</head>
+
+<body id="estiloBody">
+
+  <header class="menu container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark estilo_navbar">
+      <div class="container-fluid"> <!--container-fluid para que ocupe todo el ancho disponible-->
+        <a href="index.html">
+          <img class="CssImage" href="index.html" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/>
+        </a>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="MenuNavegacion" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a href="index.html"> Home </a></li>
+            <li class="nav-item"><a href="sobre_nosotros.html">Equipo</a></li>
+            <li class="nav-item"><a href="contacto.html"> Contacto </a></li>
+            <li class="nav-item"><a href="form_ingreso.html"> Login </a></li>
+            <li class="nav-item"><a href="alta_cliente.html"> Alta Cliente </a></li>
+            <li class="nav-item"><a href="help.html"> Ayuda </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br>
+
+  <div id="Idbreadcrumbs1" class="container">
+    <ul>
+      <li><a href="index.html"> Home > </a></li>
+      <li><a> Contacto </a></li>
+    </ul>
+  </div>
+
+  <!-- Cometando por Gabriel Rodenas - Menu Anterior
+  <header class="menu">
+    <nav>
+      <ul>
+        <li class="CssImage"><a href="index.html"><img class="CssImage" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/></a></li>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="sobre_nosotros.html">Equipo</a></li>
+        <li><a href="contacto.html"> Contacto </a></li>
+        <li><a href="form_ingreso.html"> Login </a></li>
+        <li><a href="alta_cliente.html"> Alta Cliente </a></li>
+        <li><a href="help.html"> Ayuda </a></li>
+      </ul>
+    </nav>
+  </header>
+  -->
+
+  <section id="cuerpoPagina">
+    <section>
+      <div class="container encabezado">
+        <h1>Contacto</h1>
+      </div>
+    </section>
+    <br>
+    <section>
+      <div class="container EstiloContacto">
+        <form class="EstiloFormIngreso" method="post" action="EnvCorreo.php" name="formContacto">
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="form-label">Nombre</label>
+            </div>
+            <div class="col-sm-6">
+              <input id="txtNombre" name="txtNombre" type="text" class="form-control" minlength="2"  maxlength="20" required="">
+            </div>
+          </div>
+          
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="form-label">Correo electrónico</label>
+            </div>
+            <div class="col-sm-6">
+              <input id="txtEmail" name="txtEmail" type="email" class="form-control" minlength="2"  maxlength="50" required>
+              <span>Nunca compartiremos su correo electrónico con nadie más.</span>
+            </div>
+          </div>
+            
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="form-label">Consulta</label>
+            </div>
+            <div class="col-sm-6">
+              <textarea id="txtConsulta" name="txtConsulta" type="text" class="form-control" rows="3" minlength="10"  maxlength="200" required=""></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit" name="login">Ingresar</button>
+          
+        </form>
+      </div>
+    </section>
+	  <br>
+  </section>
+
+  <footer>
+    <nav class="navbar navbar-light bg-light quitarMargenInferior">
+      <div class="container-fluid">
+        <img src="img/LogoSF.png" alt="" width="25" height="25" class="d-inline-block align-text-top" href="index.html">
+	      <a href="index.html"> Home </a>
+        <a href="sobre_nosotros.html">Equipo</a>
+        <a href="contacto.html"> Contacto </a>
+        <a href="form_ingreso.html"> Login </a>
+        <a href="help.html"> Ayuda </a>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="dir/js/bootstrap.min.js" ></script>
+  <!-- Minified JS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <script type="text/javascript" src="js/scriptContacto.js"></script>
+</body>
+</html>
