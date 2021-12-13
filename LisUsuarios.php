@@ -20,17 +20,15 @@
 
   <!-- Script JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/Archivo.js"></script>
-  <script type="text/javascript" src="js/funcionesGrupo6.js"></script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/estiloHome.css">
-  <link rel="stylesheet" href="css/Formregistro.css">
 	
 	<!-- Logo Icono -->
-    <link href="img/LogoSF.png" rel="icon" type="image/png">
+  <link href="img/LogoSF.png" rel="icon" type="image/png">
+
 	<title>Formulario Ingreso- a5-g6-gimnasio</title>
-  </head>
+</head>
 
 <body id="estiloBody">
 
@@ -105,7 +103,7 @@
 
               // Comparo cantidad de registros encontrados
               if($filas == 0){
-                echo "<script>alert('Error: usuario y/o clave incorrectos!!');</script>";
+                echo "<script> alert('Error: usuario y/o clave incorrectos!!'); </script>";
                 echo "<script type=\"text/javascript\">
                         window.location.href = \"form_ingreso.html\";
                       </script>";	
@@ -131,12 +129,11 @@
     </div>
   </section>
   
-  <footer>
+	<footer>
     <nav class="navbar navbar-light bg-light quitarMargenInferior">
       <div class="container-fluid">
-        
         <img src="img/LogoSF.png" alt="" width="25" height="25" class="d-inline-block align-text-top" href="index.html">
-	      <a href="index.html"> Home </a>
+        <a href="index.html">Home</a>
         <a href="sobre_nosotros.html">Equipo</a>
         <a href="contacto.html"> Contacto </a>
         <a href="form_ingreso.html"> Login </a>
@@ -145,12 +142,11 @@
     </nav>
   </footer>
 
-  <script src="dir/js/bootstrap.min.js" ></script>
-	<!-- Minified JS library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Compiled and minified Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-	<script type="text/javascript" src="js/scriptContacto.js"></script>
+  <!-- Minified JS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <script src="dir/js/bootstrap.min.js"></script>
   
 </body>
 </html>

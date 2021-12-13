@@ -35,7 +35,7 @@
 
 <body id="estiloBody">
 
-	<header class="menu container-fluid">
+  <header class="menu container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark estilo_navbar">
       <div class="container-fluid"> <!--container-fluid para que ocupe todo el ancho disponible-->
         <a href="index.html">
@@ -117,12 +117,12 @@
   					echo 'Error en el envío del email';
 				*/
 		  	}
-		  
+
 			include("Conexion/conexion.php");
 
-			$res=mysqli_query($conexion,"SELECT * FROM `PrUsuario`");
+			$res = mysqli_query($conexion,"SELECT * FROM `PrUsuario`");
 			$insertarUsuario = "INSERT INTO `PrUsuario` (`IdUsuario`, `DNI`, `Nombre`, `Apellido`, `Imagen`, `usuario`, `Clave`, `FechaNac`, `Correo`, `Fecha`) VALUES (NULL, '$DNI', '$Nombre', '$Apellido', '$Imagen', '$Usuario', '$Clave', '$FechaNac', '$Correo', CURRENT_TIMESTAMP);";
-			$ejecutar_insertar=mysqli_query($mysqli,$insertarUsuario);
+			$ejecutar_insertar = mysqli_query($mysqli,$insertarUsuario);
 
 			mysqli_close($mysqli);
 
@@ -136,11 +136,12 @@
   			  echo 'Error en el envío del email';
 			*/
 			  
-			echo "<script>swal (\"¡iNGRESASTE!\");</script>";
+			echo "<script>swal (\"¡INGRESASTE!\");</script>";
 
 			include("Conexion/conexion.php");
+			
 			$Clave = $_POST['txtClave'];
-			$query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `Clave` LIKE '$Clave'");
+			$query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `Usuario` = '$Usuario' AND `Clave` = '$Clave'");
 
 			while ($fila = mysqli_fetch_array($query1))
 			{
@@ -198,11 +199,11 @@
   </footer>
 
   <script src="dir/js/bootstrap.min.js" ></script>
-	<!-- Minified JS library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Compiled and minified Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-	<script type="text/javascript" src="js/scriptContacto.js"></script>
+  <!-- Minified JS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <script type="text/javascript" src="js/scriptContacto.js"></script>
   
 </body>
 </html>
